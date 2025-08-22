@@ -1,12 +1,8 @@
 :root{
-  /* Facebook-like palette */
-  --bg1:#ffffff; --bg2:#ffffff;      /* all-white page background */
-  --accent:#1877f2;                  /* Facebook Blue */
-  --accent2:#4267b2;                 /* Deeper Blue */
-  --text:#050505;                    /* Main text */
-  --muted:#606770;                   /* Secondary text */
-  --card:#ffffff;                    /* Cards / panels */
-  --stroke:#dde1e7;                  /* Borders */
+  --bg1:#ffffff; --bg2:#ffffff;
+  --accent:#1877f2; --accent2:#4267b2;
+  --text:#050505; --muted:#606770;
+  --card:#ffffff; --stroke:#dde1e7;
   --shadow:0 6px 20px rgba(0,0,0,.06);
   --radius:14px;
 }
@@ -16,7 +12,6 @@ html,body{height:100%}
 body{
   margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   color:var(--text);
-  /* Pure white background (no grey wash) */
   background:linear-gradient(180deg, var(--bg1), var(--bg2));
 }
 
@@ -25,9 +20,9 @@ body{
   display:flex; align-items:center; justify-content:space-between;
   padding:14px 22px; border-bottom:1px solid var(--stroke);
   position:sticky; top:0; z-index:10;
-  background:#ffffff;                 /* solid white bar */
-  backdrop-filter:saturate(120%) blur(4px);
+  background:#ffffff; backdrop-filter:saturate(120%) blur(4px);
 }
+.nav-actions{display:flex; gap:8px}
 .brand{font-weight:700; letter-spacing:.3px}
 .brand span{color:var(--accent)}
 
@@ -54,15 +49,13 @@ h1{
   background:linear-gradient(135deg, var(--accent), var(--accent2));
   color:#ffffff; font-weight:700; border:none;
 }
+.btn.full{width:100%; justify-content:center; margin-top:8px}
 
 /* CARDS & GRID */
-.grid{
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:16px; margin:28px 0;
-}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin:28px 0}
 .card{
   background:var(--card); border:1px solid var(--stroke); border-radius:var(--radius);
-  padding:18px; box-shadow:var(--shadow);
+  padding:18px; box-shadow:var(--shadow)
 }
 .card h3{margin:0 0 6px}
 .card p{margin:0; color:var(--muted)}
@@ -78,11 +71,11 @@ h1{
 /* FOOTER */
 .footer{color:var(--muted); text-align:center; padding:28px}
 
-/* ---- Auth / Form styles (login page) ---- */
+/* ---- Auth / Form styles ---- */
 .auth-wrap{display:grid; place-items:center; min-height:70vh}
 .auth-card{
   width:min(440px, 92%); background:var(--card); border:1px solid var(--stroke);
-  border-radius:var(--radius); padding:24px; box-shadow:var(--shadow);
+  border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)
 }
 .auth-title{margin:0 0 6px; font-size:clamp(22px,3.2vw,28px)}
 .auth-subtitle{margin:0 0 18px; color:var(--muted)}
@@ -100,5 +93,9 @@ h1{
 .checkbox{display:flex; align-items:center; gap:8px; color:var(--muted); font-size:.92rem}
 .tiny-link{color:var(--accent); text-decoration:none}
 .tiny-link:hover{text-decoration:underline}
-.btn.full{width:100%; justify-content:center; margin-top:8px}
 .auth-note{color:var(--muted); text-align:center; margin:12px 0 0}
+.select{
+  appearance:none; background:#fff url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="%23606770" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>') no-repeat right 12px center;
+  padding-right:40px;
+}
+.help{margin:4px 0 0; font-size:.9rem; color:#6b7280}
