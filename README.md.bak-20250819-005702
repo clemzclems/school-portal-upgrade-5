@@ -1,0 +1,79 @@
+# School Portal Upgrade 5
+
+This is **School Portal Upgrade 5**, a Node.js + Express + SQLite project with the following modules:
+
+- Authentication (login, forgot/reset password)
+- Admin (user management, CSV import, notifications)
+- Teacher (results + attendance)
+- Student (dashboard + report card + PIN-based results)
+- Parent (view student results/attendance)
+- Employment portal (jobs + applications)
+- Attendance tracking
+- Blog + Library (educational PDFs/apps)
+- Notifications via Email (SMTP) / SMS (Twilio) — fallback to console logs
+- Responsive design with hamburger menus
+
+## 🚀 Setup Instructions
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/YOUR_USERNAME/school-portal-upgrade-5.git
+cd school-portal-upgrade-5
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Configure Environment
+Copy `.env.example` to `.env` and update with your values:
+
+```bash
+cp .env.example .env
+```
+
+Set database, SMTP, Twilio, etc.
+
+### 4. Seed Database
+```bash
+node seed.js
+```
+
+This ensures an **admin account** is created from `.env`.
+
+### 5. Run Server
+```bash
+npm start
+```
+
+Then open [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 🔑 Default Pages
+
+- Admin: `/admin`
+- Teacher: `/teacher`
+- Student: `/student`
+- Parent: `/parent`
+- Jobs: `/jobs`
+- Results: `/results/view`
+- Blog: `/blog`
+- Library: `/library`
+
+---
+
+## 📦 Deployment
+
+Push this project to GitHub, then deploy with:
+
+- [Heroku](https://heroku.com)
+- [Railway](https://railway.app)
+- [Render](https://render.com)
+
+Or self-host on your own VPS.
+
+---
+
+Enjoy 🚀
