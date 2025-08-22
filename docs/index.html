@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>School Portal Upgrade</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="nav">
+    <div class="brand">School Portal <span>Upgrade</span></div>
+    <a class="btn" href="https://github.com/clemzclems/school-portal-upgrade-5" target="_blank">View Code</a>
+  </nav>
+
+  <main class="container">
+    <header class="hero">
+      <h1>Welcome to the School Portal</h1>
+      <p class="subtitle">Fast. Modern. Secure. Built for administrators, teachers, parents and students.</p>
+      <div class="actions">
+        <a class="btn primary" href="#">Get Started</a>
+        <a class="btn ghost" href="#">Learn More</a>
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Results & Transcripts</h3>
+        <p>Generate and share results with one click. Export to PDF and CSV.</p>
+      </article>
+      <article class="card">
+        <h3>Attendance</h3>
+        <p>Real-time class attendance with analytics and bulk import.</p>
+      </article>
+      <article class="card">
+        <h3>Fees & Invoices</h3>
+        <p>Track payments, send reminders, and reconcile instantly.</p>
+      </article>
+    </section>
+
+    <section class="card">
+      <h3>Quick Demo Table</h3>
+      <table class="table">
+        <thead><tr><th>Student</th><th>Class</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>Ada Obi</td><td>SS2</td><td><span class="pill ok">Cleared</span></td></tr>
+          <tr><td>John Musa</td><td>JSS3</td><td><span class="pill warn">Pending</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">© <span id="y"></span> School Portal Upgrade</footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear()</script>
+</body>
+</html>
